@@ -1,26 +1,24 @@
-# Continuous Deployment using AWS Code Pipeline and S3
+Continuous Deployment with AWS Code Pipeline and S3
 
-This repo contains the code files used in this [YouTube video](https://youtu.be/biYVW1TMYAU).
+Summary
+Host the game code on GitHub. Create an S3 bucket for static website hosting and set up a continuous deployment pipeline using AWS Code Pipeline to automatically deploy the code whenever changes are detected.
 
-## TL;DR
-Code for a game is hosted in GitHub.  We create an S3 bucket for static website hosting, then create a continuous deployment pipeline (using AWS Code Pipeline) to automatically deploy the code whenever changes are made.
+The Game
+A basic memory matching game where the user clicks two cards (featuring meme images) to find pairs. If a match is found, the cards are removed from the board. If not, they flip back to their blank sides, allowing the user to try again.
 
-## The Game
-A simple memory matching game.  The user clicks two cards (images of memes) to try to match them.  If there's a match, the cards disappear from the board.  If there's no match, the cards are flipped back to their blank side so the user can try again.
+The game is built using HTML, CSS, and JavaScript.
 
-The game consists of HTML, CSS and JavaScript.
+Possible additional features:
 
-Ideas for additional features:
-- A scoring mechanism
+- A scoring system
 - A timer
-- Add additional cards
-- Multi-player capabilities so you can compare scores 
+- More cards
+- Multiplayer capabilities for score comparison
+- Deployment Environment
+- The code will be hosted and deployed in an S3 bucket.
 
-## The Deployment Environment
-The code will be deployed and hosted in S3.
+Deployment Pipeline
+Using AWS Code Pipeline, create a pipeline that retrieves the code from GitHub and deploys it to S3 whenever there is a code change.
 
-## The Deployment Pipeline
-The pipeline is created using AWS Code Pipeline.  The pipeline pulls the code from GitHub, and deploys it to S3 whenever a change is detected in the code.
-
-## Cost
-All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
+Costs
+All services mentioned are part of the AWS Free Tier. However, costs may incur eventually, so it's advisable to shut down resources once this tutorial is completed.
