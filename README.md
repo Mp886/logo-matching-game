@@ -1,9 +1,9 @@
 Continuous Deployment with AWS Code Pipeline and S3
 
-Summary
+Summary:
 Host the game code on GitHub. Create an S3 bucket for static website hosting and set up a continuous deployment pipeline using AWS Code Pipeline to automatically deploy the code whenever changes are detected.
 
-The Game
+The Game:
 A basic memory matching game where the user clicks two cards (featuring meme images) to find pairs. If a match is found, the cards are removed from the board. If not, they flip back to their blank sides, allowing the user to try again.
 
 The game is built using HTML, CSS, and JavaScript.
